@@ -57,10 +57,6 @@ endif
 
 LOCAL_CFLAGS += -Wall -Wextra -Werror
 
-ifneq (,$(filter $(strip $(SOMC_KERNEL_VERSION)),4.9 4.14))
-LOCAL_CFLAGS += -DUSE_4_9_DEFS
-endif
-
 LOCAL_SRC_FILES := $(MM_CAM_FILES)
 
 LOCAL_MODULE           := libmmcamera_interface
